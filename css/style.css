@@ -1,0 +1,500 @@
+/* start global */
+
+.body{
+    position: relative
+}
+
+.container{
+    margin: auto;
+    width: 1000px
+}
+
+.clearfix{
+    clear: both;
+}
+
+
+p{
+    color: #CCC
+}
+
+
+h1, h2, h3, h4{
+    font-weight: normal;
+}
+
+.navbar, .header, .our, .custom,
+.project, .footer{min-width: 600px}
+
+
+.hidden{display: none}
+
+/*
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+*/
+
+/*end global*/
+
+
+
+/*start navbar*/
+.navbar{
+    height: 0;
+    color:   #D3DDE6;
+    position: absolute;
+    left: 130px;
+    z-index: 3
+}
+
+.navbar .brand{
+    float: left
+}
+
+.navbar .brand h1 i{
+    color:#1ABC9B
+}
+
+.navbar ul{
+    float: right;
+    list-style: none;
+    padding-top: 11px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 11px;
+    font-weight: bold
+}
+
+
+.navbar ul li a{
+    color: #D3DDE6;
+    text-decoration: none;
+}
+
+.navbar ul li.active a,
+.navbar ul li a:hover{
+    color: #1ABC9B;
+    font-weight: bold;
+    border-bottom: 2px solid #1ABC9B;
+    cursor: pointer
+}
+
+
+/*end navbar*/
+
+
+/*start Header*/
+.header{
+    background: url(../imags/headeer.jpeg)  no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1
+        
+    
+}
+
+.header .overly{
+    background-color: rgb(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2
+
+}
+/*end Header*/
+
+
+/*start slider*/
+
+.header .overly .slider {
+    text-align: center;
+    position: absolute;
+    top: 270px;
+    left: 450px
+
+}
+
+.slider .o h2{
+    color:#1ABC9B
+}
+
+.slider .o p{
+    font-style: italic;
+}
+
+
+.fa-arrow-circle-right {
+    position: absolute;
+    right: 10px;
+    top: 291px;
+    font-size: 25px;
+    color: gray;
+    cursor: pointer
+}
+
+.fa-arrow-circle-left {
+    position: absolute;
+    left: 10px;
+    top: 291px;
+    font-size: 25px;
+    color: gray;
+    cursor: pointer
+}
+
+/*end slider*/
+
+
+
+/*start our*/
+.our{
+    overflow: hidden;
+    padding-top: 0 ;
+    margin-top: 40px;
+    padding-bottom: 40px
+}
+
+.our h2 span{
+    border-bottom: 2px solid #000;
+    padding-bottom: 7px
+}
+
+.our .abo{
+    width: 33.333333%;
+    float: left;
+}
+
+.our .abo .icon{
+    width: 20%;
+    float: left;
+    height: 150px
+}
+
+.our .abo .icon i{
+    font-size: 40px;
+    padding-top: 30px;
+    margin-right: 10px;
+    color: #1ABC9B
+}
+
+.our .abo .pra{
+    width: 80%;
+    float: left
+}
+
+/*end our*/
+
+
+
+/*start out team*/
+.our_team{
+    overflow: hidden;
+    padding-top: 20px;
+    margin-top: 40px
+}
+
+.our_team .left{
+    float: left;
+    width: 36%;
+
+    
+}
+
+.our_team .left h2{
+    margin-top: 0;
+    margin-bottom: 40px
+}
+
+.our_team .left h2 span{
+    border-bottom: 2px solid #000;
+    padding-bottom: 7px
+}
+
+.our_team .right{
+    float: right;
+    width: 63%;
+    text-align: right
+
+}
+
+.our_team .right .img{
+    display: inline-block;
+    position: relative
+}
+
+.our_team .right .img .over{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-color:#1ABC9B;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 150px;
+    display: none;
+    color: #FFF;
+    
+}
+
+.our_team .right .img:hover .over{
+    display: block
+}
+
+.our_team .right .img img{
+    width: 100%;
+    height: 100%
+}
+/*end out team*/
+
+
+/*start custom*/
+.custom{
+    height: 330px;
+    background: url(https://callminer.com/wp-content/uploads/stockfresh_8245621_female-customer-services-agent-in-call-center_sizeS.jpg) no-repeat center center ;
+    background-size: cover;
+    margin-top: 50px;
+
+}
+
+.custom .overly{
+    background-color: rgb(0,0,0,0.6);
+    height: 100%
+}
+
+.custom .overly .container{
+    padding: 40px 0;
+    text-align: center;
+    color: #999;
+    line-height: 200%
+}
+
+.custom .overly .container h2{
+    margin: 20px 0 50px 0
+}
+
+.custom .overly .container h2 span{
+    border-bottom: 2px solid #999;
+    padding-bottom: 7px
+}
+
+.custom .overly .container .le{
+    padding-top: 30px;
+    color: #1ABC9B
+}
+
+.custom  .slide div{
+    display: none
+}
+
+/*
+.custom  .slide div.active{
+    display: block
+}
+*/
+
+.custom  .slide :first-child{
+    display: block
+}
+/*end custom*/
+
+
+
+/*start our projects*/
+/*//33.3333333333*/
+.project{
+    margin-top: 30px;
+}
+
+
+.project h2 span{
+     border-bottom: 2px solid #999;
+    padding-bottom: 7px   
+}
+
+.project ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 40px
+}
+
+.project ul li{
+    border: 1px solid #CCC;
+    padding: 7px 13px;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 7%;
+    color: #999;
+    cursor: pointer
+    
+}
+
+.project ul li.le{
+    color: #f3f3f3;
+    border: 1px solid #1ABC9B;
+    background-color: #1ABC9B;
+}
+
+/*32.6666666667*/
+
+
+.project .gal{
+    overflow: hidden;
+    margin-top: 40px
+}
+
+
+.project .gal .row >div{
+    position: relative;
+    width: 32.6666666667%;
+    float: left;
+    margin-bottom: 7px;
+}
+
+
+.project .gal .row div img{
+    width: 100%
+}
+
+.project .gal .row div:nth-child(2){
+    margin-left: 1%;
+    margin-right: 1%
+}
+
+.gal .row .heart{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: none
+}
+
+
+
+ .gal .row div.over{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 98.5%;
+    background-color:#1ABC9B;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 215px;
+     display: none;
+     color: #FFF
+}
+
+.project .gal .row div:hover .over,
+.project .gal .row div:hover .heart{
+    display: block
+}
+
+
+/*end our projects*/
+
+
+/*start footer*/
+
+.footer{
+    background-color: #131212;
+    margin-top: 60px;
+    overflow: hidden;
+    color: #CCC;
+    padding-top: 60px
+}
+
+.footer .container > div{
+    float: left;
+    width: 23.5%;
+    
+}
+
+.footer .container > div:nth-child(2){
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.footer .container > div:nth-child(3){
+    margin-right: 2%
+}
+
+.footer .container .fr i{
+    background:#131212 ;
+    color:#CCC ;
+    font-size: 30px;
+    border: 1px solid #131212;
+    margin-right: 7px 
+    
+}
+
+.footer .container .fr p{
+    margin: 40px 0;
+}
+
+.footer .container .copy{
+    margin-top: 30px
+}
+
+.footer .container .tags h2{
+    margin-bottom: 47px
+}
+
+.footer .container .tags span{
+    border: 1px solid #CCC;
+    padding: 2px 7px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 7px
+}
+
+.footer .container .recent{
+    overflow: hidden;
+    line-height: 200%
+}
+
+.footer .container .recent .img{
+    float: left;
+    width: 28%;
+    
+}
+
+.footer .container .recent .img img{
+    width: 100%
+}
+
+.footer .container .recent .word{
+    float: right;
+    width: 67%;
+    height: 75.9587px;
+}
+
+.footer .container .recent .word h4{
+    margin:0;
+
+}
+
+.footer .container .recent .word span{
+    margin-top: -10px
+}
+
+.footer .container .blog ul{
+    list-style: none;
+    line-height: 200%
+}
+
+.footer .container .blog ul li{
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 7px
+}
+
+/*endt footer*/
+
+
